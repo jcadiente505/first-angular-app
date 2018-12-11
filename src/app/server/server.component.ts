@@ -10,5 +10,10 @@ import { Component } from '@angular/core';
     templateUrl: './server.component.html'
 })
 export class ServerComponent {
-
+    serverId: number = 10;
+    serverStatus: string = "offline";
+    // Practicing method in components
+    getServerStatus() {
+        return this.serverStatus
+    }
 }

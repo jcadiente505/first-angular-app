@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
     // should be a unique string, **DO NOT OVERRIDE AN EXISTING HTML ELEMENT**
     selector: 'app-server',
     // templateUrl is the html file associated with this component
-    templateUrl: './server.component.html'
+    templateUrl: './server.component.html',
+    styles: [`
+        .online {
+            color: white
+        }
+    `]
 })
 export class ServerComponent {
     serverId: number = 10;
